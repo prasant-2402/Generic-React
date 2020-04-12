@@ -1,0 +1,56 @@
+@import './constants.scss';
+
+@media screen and (min-width: 800px) {
+    body {
+        font-size: $font-size;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas:
+            'header header'
+            'menu main'
+            'footer footer';
+        padding: 10px;
+        grid-template-columns: 2fr 8fr;
+        -ms-grid-columns: 2fr 9fr;
+        grid-template-rows: 2fr 6fr 1fr;
+
+        div {
+            padding: 10px;
+            margin: 2px;
+            border: $border-style;
+            font-size: $font-size;
+        }
+
+        .Header {
+            grid-area: header;
+            vertical-align: middle;
+            background: #99f3;
+            grid-area: header;
+            font-size: $page-header-font;
+            font-weight: $bold-font;
+        }
+
+        .SideBar {
+            grid-area: menu;
+        }
+
+        .MainContent {
+            grid-area: main;
+        }
+
+        .Footer {
+            grid-area: footer;
+            font-size: $footer-font-size;
+            padding: 0;
+
+            div {
+                border: 0;
+                font-style: italic;
+                font-size: $font-small;
+                background-color: #ddd;
+            }
+        }
+    }
+}
