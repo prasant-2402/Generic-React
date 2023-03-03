@@ -4,6 +4,6 @@
     <RootNamespace>generic_react_api</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="MongoDB.Driver" Version="2.10.3"/>
+    <PackageReference Include="MongoDB.Driver" Version="2.19.0"/>
   </ItemGroup>
 </Project>
